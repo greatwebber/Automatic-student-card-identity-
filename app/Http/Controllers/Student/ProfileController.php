@@ -13,7 +13,7 @@ class ProfileController extends Controller
     public function edit()
     {
         $student = Auth::guard('student')->user();
-        return view('student.profile.edit', compact('student'));
+        return view('student.profile', compact('student'));
     }
 
     public function update(Request $request)

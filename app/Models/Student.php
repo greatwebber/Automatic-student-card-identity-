@@ -31,4 +31,10 @@ class Student extends Authenticatable
     {
         return $this->belongsTo(Department::class);
     }
+
+    public function idCard()
+    {
+        return $this->hasOne(IDCard::class);
+    }
+
 }
